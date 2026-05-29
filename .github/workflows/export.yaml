@@ -1,0 +1,41 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  build:
+    name: Export to Asset-lib
+    runs-on: ${{ vars.ACTIONS_RUNNER }}
+
+    env:
+      uploadUrl: ${{ secrets.uploadUrl }}
+      apiKey: ${{ secrets.apiKey }}
+      GODOT_ASSET_ID: ${{ vars.GODOT_ASSET_ID }}
+      XOGOT_ASSET_ID: ${{ vars.XOGOT_ASSET_ID }}
+      version: ${{ github.ref_name }}
+      GODOT_VERSION: ${{ vars.GODOT_VERSION }}
+      TAGS: ${{ vars.TAGS }}
+      ICON_URL: ${{ vars.ICON_URL }}
+      EXTRA_ARGS: ${{ vars.EXTRA_ARGS }}
+      ZIPCOMMAND: ${{ vars.ZIPCOMMAND }}
+      BUILD_SCRIPT_URL: ${{ vars.BUILD_SCRIPT_URL }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - uses: chickensoft-games/setup-godot@v1
+      name: 🤖 Setup Godot
+      with:
+        version: ${{ vars.GODOT_VERSION }}
+        use-dotnet: false
+        include-templates: false
+
+    - name: Download, chmod, and run build script
+      run: |
+        curl -L "$BUILD_SCRIPT_URL" -o build.sh
+        chmod +x build.sh
+        ./build.sh
