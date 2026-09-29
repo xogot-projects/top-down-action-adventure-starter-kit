@@ -1,6 +1,6 @@
 # Pinned add-ons for Godot 4.7.2
 
-- Dialogic [2.0-alpha-14](https://github.com/dialogic-godot/dialogic/tree/2.0-alpha-14): the version previously required by this project. Both `_get` overrides now return null on fall-through. Main-screen editor cleanup no longer removes an unregistered bottom-panel dock.
+- Dialogic [2.0-alpha-14](https://github.com/dialogic-godot/dialogic/tree/2.0-alpha-14): the version previously required by this project. Both `_get` overrides now return null on fall-through; the name-label `_set` override returns false for unhandled properties. Main-screen editor cleanup no longer removes an unregistered bottom-panel dock.
 - Beehave [v2.9.3](https://github.com/bitbrain/beehave/tree/v2.9.3): message capture and delivery require an active EngineDebugger, so standalone/headless runs work.
 
 Both add-ons retain their upstream MIT licenses. Only the upstream `addons` directories and licenses are included; generated `.godot` data is excluded.
