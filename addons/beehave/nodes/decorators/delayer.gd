@@ -53,5 +53,5 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 func interrupt(actor: Node, blackboard: Blackboard) -> void:
 	# Reset the delay timer when the branch changes
 	blackboard.set_value(cache_key, 0.0, str(actor.get_instance_id()))
-	
+
 	super(actor, blackboard)

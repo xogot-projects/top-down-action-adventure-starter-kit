@@ -8,3 +8,5 @@ Both add-ons retain their upstream MIT licenses. Only the upstream `addons` dire
 Archive SHA-256 values:
 - dialogic: `ef4ee2b31048adc169df5ce37305b8c6e7c81f64f9c95326f14adb70802cd630`
 - beehave: `6299d8c42a29c2a44fabb2a43113067997fac5908c7748645da6958329c9951c`
+
+Vendored text is normalized to remove trailing whitespace and extra blank lines at EOF so the upgrade diff passes `git diff --check`.

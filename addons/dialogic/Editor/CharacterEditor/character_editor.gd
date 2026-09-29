@@ -655,4 +655,3 @@ func _on_fit_preview_toggle_toggled(button_pressed):
 func _on_reference_manger_button_pressed():
 	editors_manager.reference_manager.open()
 	%PortraitChangeInfo.hide()
-

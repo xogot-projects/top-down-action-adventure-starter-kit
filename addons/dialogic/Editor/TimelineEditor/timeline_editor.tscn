@@ -62,7 +62,7 @@ text = "Cool Name"
 
 [node name="NameTooltip" parent="VBox/HBox" instance=ExtResource("2_yqd26")]
 layout_mode = 2
-tooltip_text = "The name of the timeline is determined from the file name. 
+tooltip_text = "The name of the timeline is determined from the file name.
 This is what you should use in a jump event to reference this timeline.
 
 Besides the file path, you can also use this name in Dialogic.start()"
@@ -119,7 +119,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="NoTimelineScreen/CenterContainer/VBoxContainer"]
 layout_mode = 2
-text = "No timeline opened. 
+text = "No timeline opened.
 Create a timeline or double-click one in the file system dock."
 horizontal_alignment = 1
 autowrap_mode = 3

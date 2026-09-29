@@ -124,11 +124,11 @@ text = "Use on exports only"
 [node name="HintTooltip" parent="Grid/HBoxContainer4/EncryptionOnExportsSection" instance=ExtResource("2_v2wt8")]
 layout_mode = 2
 tooltip_text = "For easier debugging dialogic will only encrypt saves made by exported project.
-Exported projects with debug mode on or saves made when running in editor 
+Exported projects with debug mode on or saves made when running in editor
 will not use encryption."
 texture = SubResource("ImageTexture_dbvsu")
 hint_text = "For easier debugging dialogic will only encrypt saves made by exported project.
-Exported projects with debug mode on or saves made when running in editor 
+Exported projects with debug mode on or saves made when running in editor
 will not use encryption."
 
 [node name="EncryptionOnExports" type="CheckBox" parent="Grid/HBoxContainer4/EncryptionOnExportsSection"]

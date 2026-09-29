@@ -4,7 +4,7 @@ func animate():
 	var tween := (node.create_tween() as Tween)
 	node.scale = Vector2()
 	node.modulate.a = 0
-	
+
 	tween.set_ease(Tween.EASE_IN_OUT)
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_parallel()

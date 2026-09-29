@@ -16,7 +16,7 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 	var children := get_children()
 	var children_count = children.size()
 	var processed_count = 0
-	
+
 	for i in range(children.size()):
 		var c = children[i]
 
@@ -25,7 +25,7 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 
 		var response: int = c._safe_tick(actor, blackboard)
 		processed_count += 1
-		
+
 		if can_send_message(blackboard):
 			BeehaveDebuggerMessages.process_tick(c.get_instance_id(), response, blackboard.get_debug_data())
 

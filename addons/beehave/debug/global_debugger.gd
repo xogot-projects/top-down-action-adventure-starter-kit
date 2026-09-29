@@ -39,7 +39,7 @@ func _set_active_tree(tree_id: int) -> void:
 		_active_tree = tree
 		# Activate the new tree ONLY if the editor debugger tab is actually visible
 		_active_tree._can_send_message = _editor_visible
-		
+
 		# If this was the pending ID, clear it
 		if _pending_activation_id == tree_id:
 			_pending_activation_id = -1
@@ -55,7 +55,7 @@ func _set_active_tree(tree_id: int) -> void:
 func register_tree(tree) -> void:
 	var tree_id = tree.get_instance_id()
 	_registered_trees[tree_id] = tree
-	
+
 	# Check if this tree was waiting for activation
 	if tree_id == _pending_activation_id:
 		# Found the pending tree, activate it now

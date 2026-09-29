@@ -7,8 +7,8 @@ func animate():
 	tween.set_ease(Tween.EASE_OUT)
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_parallel()
-	
+
 	tween.tween_property(node, 'position', orig_pos, time)
 	tween.tween_property(node, 'modulate:a', 1.0, time)
-	
+
 	tween.finished.connect(emit_signal.bind('finished_once'))

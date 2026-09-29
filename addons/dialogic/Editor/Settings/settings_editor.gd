@@ -166,4 +166,3 @@ func refresh():
 	for child in %SettingsContent.get_children():
 		if child.get_meta('section').has_method('_refresh'):
 			child.get_meta('section')._refresh()
-

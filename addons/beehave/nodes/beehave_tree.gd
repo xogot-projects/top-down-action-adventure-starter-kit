@@ -204,13 +204,13 @@ func tick() -> int:
 	if status != RUNNING:
 		blackboard.set_value("running_action", null, str(actor.get_instance_id()))
 		child.after_run(actor, blackboard)
-		
+
 	if _can_send_message and not Engine.is_editor_hint():
 		BeehaveDebuggerMessages.process_end(get_instance_id(), blackboard.get_debug_data())
 
 	# Check the cost for this frame and save it for metric report
 	_process_time_metric_value = Time.get_ticks_usec() - start_time
-	
+
 	return status
 
 

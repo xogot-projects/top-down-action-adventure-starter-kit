@@ -15,5 +15,3 @@ extends DialogicLayoutBase
 func _apply_export_overrides() -> void:
 	# apply layer
 	set(&'layer', canvas_layer)
-
-

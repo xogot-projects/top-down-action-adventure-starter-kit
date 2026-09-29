@@ -3,7 +3,7 @@ extends AudioStreamPlayer
 
 ## Node that is used for playing sound effects on hover/focus/press of sibling DialogicNode_ChoiceButtons.
 
-## Sound to be played if one of the sibling ChoiceButtons is pressed. 
+## Sound to be played if one of the sibling ChoiceButtons is pressed.
 ## If sibling ChoiceButton has a sound_pressed set, that is prioritized.
 @export var sound_pressed:AudioStream
 ## Sound to be played on hover. See [sound_pressed] for more.
@@ -49,4 +49,3 @@ func _on_focus(custom_sound) -> void:
 		play_sound(custom_sound)
 	else:
 		play_sound(sound_focus)
-

@@ -25,8 +25,8 @@ func _init() -> void:
 	var plugin := BeehaveUtils.get_plugin()
 	if not plugin:
 		return
-	
-	
+
+
 	titlebar_normal = (
 		plugin
 		.get_editor_interface()
@@ -37,16 +37,16 @@ func _init() -> void:
 	titlebar_success = titlebar_normal.duplicate()
 	titlebar_failure = titlebar_normal.duplicate()
 	titlebar_running = titlebar_normal.duplicate()
-	
+
 	titlebar_success.bg_color = SUCCESS_COLOR
 	titlebar_failure.bg_color = FAILURE_COLOR
 	titlebar_running.bg_color = RUNNING_COLOR
-	
+
 	titlebar_success.border_color = SUCCESS_COLOR
 	titlebar_failure.border_color = FAILURE_COLOR
 	titlebar_running.border_color = RUNNING_COLOR
-	
-	
+
+
 	panel_normal = (
 		plugin
 		.get_editor_interface()
@@ -63,7 +63,7 @@ func _init() -> void:
 	)
 	panel_failure = panel_success.duplicate()
 	panel_running = panel_success.duplicate()
-	
+
 	panel_success.border_color = SUCCESS_COLOR
 	panel_failure.border_color = FAILURE_COLOR
 	panel_running.border_color = RUNNING_COLOR

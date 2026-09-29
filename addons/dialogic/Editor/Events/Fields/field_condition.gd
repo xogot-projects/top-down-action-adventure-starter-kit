@@ -264,4 +264,3 @@ func _on_value_1_variable_value_changed(property_name: Variant, value: Variant) 
 				%Value2Type.index_pressed(1)
 
 	something_changed()
-

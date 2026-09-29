@@ -4,13 +4,13 @@ extends HBoxContainer
 # Dialogic Editor toolbar. Works together with editors_mangager.
 
 ################################################################################
-## 					EDITOR BUTTONS/LABELS 
+## 					EDITOR BUTTONS/LABELS
 ################################################################################
 func _ready():
 	if owner.get_parent() is SubViewport:
 		return
 	%CustomButtons.custom_minimum_size.y = 33 * DialogicUtil.get_editor_scale()
-	
+
 	for child in get_children():
 		if child is Button:
 			child.queue_free()
@@ -34,7 +34,7 @@ func add_custom_button(label:String, icon:Texture) -> Button:
 	button.text = label
 	button.icon = icon
 #	button.flat = true
-	
+
 	button.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
 	%CustomButtons.add_child(button)
 #	custom_minimum_size.y = button.size.y
@@ -44,6 +44,3 @@ func add_custom_button(label:String, icon:Texture) -> Button:
 func hide_all_custom_buttons() -> void:
 	for button in %CustomButtons.get_children():
 		button.hide()
-
-
-

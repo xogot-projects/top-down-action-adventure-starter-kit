@@ -28,7 +28,7 @@ text = "Scale:"
 [node name="PortraitScale" type="SpinBox" parent="HBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-tooltip_text = "A scale to be applied on top of the main scale 
+tooltip_text = "A scale to be applied on top of the main scale
 (unless ignore main scale is pressed)."
 value = 100.0
 allow_greater = true

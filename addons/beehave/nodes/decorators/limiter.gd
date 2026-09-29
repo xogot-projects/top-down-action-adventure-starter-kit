@@ -54,7 +54,7 @@ func before_run(actor: Node, blackboard: Blackboard) -> void:
 func interrupt(actor: Node, blackboard: Blackboard) -> void:
 	# The tree is changing branches, so the count should reset
 	_reset_counter(actor, blackboard)
-	
+
 	# Call super, which may affect our blackboard values
 	super(actor, blackboard)
 

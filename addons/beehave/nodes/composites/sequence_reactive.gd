@@ -38,10 +38,10 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 				c.after_run(actor, blackboard)
 			FAILURE:
 				_interrupt_children(actor, blackboard, i, previous_failure_index)
-				
+
 				# remember where we failed for next tick
 				previous_failure_index = c.get_index()
-				
+
 				if running_child != null:
 					running_child.interrupt(actor, blackboard)
 					_cleanup_running(running_child, actor, blackboard)

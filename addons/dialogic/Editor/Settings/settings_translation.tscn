@@ -75,7 +75,7 @@ tooltip_text = "Change this locale to test your game in a different language (on
 Equivalent of the testing local project setting. "
 texture = SubResource("ImageTexture_xbph7")
 hint_text = "Change this locale to test your game in a different language (only in-editor).
-Equivalent of the testing local project setting. 
+Equivalent of the testing local project setting.
 
 Update dropdown list via \"Collect Translation\"."
 

@@ -51,7 +51,7 @@ func before_run(actor: Node, blackboard: Blackboard) -> void:
 func interrupt(actor: Node, blackboard: Blackboard) -> void:
 	# Reset the timer when the node is interrupted
 	blackboard.set_value(cache_key, 0.0, str(actor.get_instance_id()))
-		
+
 	super(actor, blackboard)
 
 

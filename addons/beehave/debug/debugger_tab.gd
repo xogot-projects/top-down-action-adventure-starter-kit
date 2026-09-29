@@ -117,7 +117,7 @@ func start() -> void:
 			get_tree().create_timer(delay).timeout.connect(_notify_state)
 	else:
 		_notify_state()
-	
+
 	# Auto-detach if enabled in project settings - check every time
 	if ProjectSettings.get_setting("beehave/debugger/start_detached", false):
 		emit_signal("make_floating")

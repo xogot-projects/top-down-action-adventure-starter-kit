@@ -56,7 +56,7 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 func interrupt(actor: Node, blackboard: Blackboard) -> void:
 	# Reset the internal counter when the node is interrupted
 	current_count = 0
-		
+
 	super(actor, blackboard)
 
 

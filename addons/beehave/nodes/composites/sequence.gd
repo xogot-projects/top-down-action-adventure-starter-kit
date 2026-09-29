@@ -41,19 +41,19 @@ func tick(actor: Node, blackboard: Blackboard) -> int:
 				if running_child != null:
 					running_child.interrupt(actor, blackboard)
 					_cleanup_running(running_child, actor, blackboard)
-				
+
 				_interrupt_children(actor, blackboard, i, previous_failure_or_running_index)
-						
+
 				# remember where we failed for next tick
 				previous_failure_or_running_index = c.get_index()
 				successful_index = 0
-				
+
 				# Interrupt any child that was RUNNING before
 				# but do not reset!
 				if running_child != null:
 					running_child.interrupt(actor, blackboard)
 					running_child = null
-					
+
 				c.after_run(actor, blackboard)
 				return FAILURE
 			RUNNING:

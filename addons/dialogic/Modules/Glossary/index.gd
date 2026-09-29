@@ -11,4 +11,3 @@ func _get_editors() -> Array:
 
 func _get_subsystems() -> Array:
 	return [{'name':'Glossary', 'script':this_folder.path_join('subsystem_glossary.gd')}]
-

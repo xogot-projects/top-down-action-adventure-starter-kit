@@ -54,8 +54,8 @@ func _ready() -> void:
 	layout_button.pressed.connect(func(): horizontal_layout = not horizontal_layout)
 	get_menu_container().add_child(layout_button)
 	_update_layout_button()
-	
-	
+
+
 func _get_connection_line(from_position: Vector2, to_position: Vector2) -> PackedVector2Array:
 	# FIXME: hack to hide default lines because empty array crashes Godot :(
 	const vec1 = Vector2(-9999999, -9999999)
@@ -164,9 +164,9 @@ func process_begin(instance_id: int, blackboard = null) -> void:
 
 	for child in _get_child_nodes():
 		child.set_meta("status", -1)
-		
-		
-		
+
+
+
 func process_interrupt(instance_id: int, blackboard = null) -> void:
 	var node := get_node_or_null(str(instance_id))
 	if node:
@@ -266,13 +266,13 @@ func _draw() -> void:
 		# Get colors based on node states
 		var from_color: Color
 		var to_color: Color
-		
+
 		match from.get_meta("status", -1):
 			BeehaveNode.SUCCESS: from_color = SUCCESS_COLOR
 			BeehaveNode.FAILURE: from_color = FAILURE_COLOR
 			BeehaveNode.RUNNING: from_color = ACTIVE_COLOR
 			_: from_color = INACTIVE_COLOR
-			
+
 		match to.get_meta("status", -1):
 			BeehaveNode.SUCCESS: to_color = SUCCESS_COLOR
 			BeehaveNode.FAILURE: to_color = FAILURE_COLOR

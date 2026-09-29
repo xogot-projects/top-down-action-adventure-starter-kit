@@ -194,4 +194,3 @@ func _get_syntax_highlighting(Highlighter:SyntaxHighlighter, dict:Dictionary, li
 		dict = Highlighter.color_shortcode_content(dict, line, line.find(']', from), 0,event_color)
 	return dict
 #endregion
-

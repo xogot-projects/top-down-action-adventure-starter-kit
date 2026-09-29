@@ -8,4 +8,3 @@ func _get_events() -> Array:
 
 func _get_subsystems() -> Array:
 	return [{'name':'TextInput', 'script':this_folder.path_join('subsystem_text_input.gd')}]
-
