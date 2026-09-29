@@ -621,7 +621,7 @@ _data = {
 }
 
 [sub_resource type="GDScript" id="GDScript_oit5n"]
-script/source = "class_name CutSceneManager extends AnimationPlayer
+script/source = "extends AnimationPlayer
 
 var label_index = 1
 

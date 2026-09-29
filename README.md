@@ -5,7 +5,7 @@ https://github.com/user-attachments/assets/ea57e4ae-660c-4feb-a5fc-0f1929f3c775
 
 
 Work-in-progress of a action adventure starter kit for Godot 4.
-**NOTE:** Developed in and compatible with **Godot 4.3**. It looks like that `MeshLibrary` is breaking compatibility with 4.2. 
+**NOTE:** Developed in and compatible with **Godot 4.7.2**. The required add-ons are included.
 
 Credits and thank you to:
 - @kaylousberg for the FREE [Kaykit Prototype Bits](https://kaylousberg.itch.io/prototype-bits) as a base for the 3D Assets;
@@ -20,14 +20,11 @@ Follow me on Twitter/X to get regular updates about the development and coming f
 
 # Loading the project for the first time:
 
-1) Clone or download this repository in a folder
-2) Open the project in Godot (there will be a lot of errors, because of missing add-ons)
-3) Click on AssetLib, search for Beehave and install it
-4) Download [Dialogic2 from here](https://github.com/dialogic-godot/dialogic/archive/refs/tags/2.0-alpha-14.zip)
-5) Unzip, find the `dialogic` folder (in the folder `addons`) and paste it in the `res://addons` folder of the Godot project
-6) Go in `Project/Project Settings`, in the tab `Plugins`, activate both Beehave and Dialogic
-7) (Optional) For your peace of mind, you might want to reload the project
-8) Run the Game! 
+1) Clone or download this repository.
+2) Open the project in Godot 4.7.2 or the corresponding Xogot release.
+3) Run the game.
+
+The project includes Dialogic 2.0-alpha-14 and Beehave v2.9.3 under `addons/`, with focused Godot 4.7 compatibility fixes. The incomplete custom dialogue-style resource is replaced by Dialogic's built-in Default layout. See `addons/VERSIONS.md` for the pinned sources and local patches.
 
 # Features:
 ## Gridmap Powered
