@@ -34,6 +34,7 @@ sdfgi_min_cell_size = 0.05
 sdfgi_cascade0_distance = 3.2
 sdfgi_energy = 0.525
 glow_enabled = true
+glow_blend_mode = 2
 glow_levels/1 = 13.56
 glow_levels/2 = 8.41
 glow_levels/3 = 4.53

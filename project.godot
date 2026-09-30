@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Twin Shooter Starting Kit"
 config/tags=PackedStringArray("starterkit")
 run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.4")
+config/features=PackedStringArray("4.7")
 config/icon="res://project_icon.png"
 
 [autoload]
@@ -35,8 +39,8 @@ directories/dtl_directory={
 "level1_intro": "res://scenes/level1/level1_intro.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://ui/dialogic_style/dialog_style.tres"]
-layout/default_style="res://ui/dialogic_style/dialog_style.tres"
+layout/style_list=[]
+layout/default_style="Default"
 variables={
 "status": "starting"
 }
